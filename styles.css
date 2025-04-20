@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Container Layout */
+.cv-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: #1e3c72;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Main Content */
+.main-content {
+    width: 70%;
+    padding: 30px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #1e3c72;
+    border-bottom: 2px solid #1e3c72;
+    padding-bottom: 5px;
+}
+
+.experience-item {
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.experience-item ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        text-align: left;
+    }
+    .sidebar {
+        padding: 30px;
+    }
+    .profile-image {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
